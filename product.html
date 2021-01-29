@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Product</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">HighLight</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="EPS_project.html">EPS project</a></li>
+											<li><a href="team.html">Team</a></li>
+											<li><a href="product.html">Product</a></li>
+											<li><a href="contact_us.html">Contact us</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Product</h2>
+							<p>Let's enjoy the light</p>
+						</header>
+						<section class="wrapper style6">
+							<div class="inner">
+
+								<h3>About our product</h3>
+								<p style="text-align: justify">Our product consists on a Raspberry Pi with some led bands. Something simple right? In fact, it is, but with the help of all of our team members we have created something special that makes our product unique with just components that are really common. </p>
+								<p style="text-align: justify">And what makes our product so unique? Continue reading and you will discover it!</p>
+
+								<hr />
+
+								<h3>Hardware</h3>
+								<p style="text-align: justify">In Highlight we want to make things as simple as possible, that is why we wanted to use the minimum number of components we could. Therefore, our product can work perfectly with just two components, a Raspberry Pi and a LED band (Sometimes it will be needed a third component, an external power supply).</p>
+								
+								<h4>Raspberry Pi 4-B</h4>
+								<p style="text-align: justify">We chose to use a Raspberry Pi because it is a low-cost computer whose size resembles the size of a credit card and is capable of doing everything expected of a desktop computer. Additionally, the Raspberry Pi has the ability to interact with the outside world and has been used in a wild range of digital creator projects.</p>
+								<p style="text-align: justify">Among the Raspberry Pi products, there are different models, depending on the board characteristics. In our case, we decided to use the model 4-B, because it has a different processor than the previous model and the upgrade is huge. It also has changed the input power connector from a micro-USB to a type C, that is now more common.</p>
+								<div class="box alt">
+									<div class="row aln-center">
+										<div class="col-4"><span class="image fit"><img src="images/raspberrypi4B.jpg" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/raspberrypi4B2.jpg" alt="" /></span></div>
+									</div>
+								</div>
+
+								<h4>WS28182B RGB LED band</h4>
+								<p style="text-align: justify">As our product is about light, we needed some source of light, and we decided to use LED bands. LED lights are easy to use, small, and the need very little input power. As they are small, they can fit in small places like a LED band, and make a huge line of LEDs.</p>
+								<p style="text-align: justify">There are many types of LED bands, but the one that we chose works really well with Raspberry Pi and it is really easy to program it (colors, frequency, intensity…). This LED strip is can also be cut between every LED, and will continue working, and with the other part of the LED band, with just few cables you will be ready to use it again!</p>
+								<div class="box alt">
+									<div class="row aln-center">
+										<div class="col-4"><span class="image fit"><img src="images/LEDband.PNG" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/LEdband2.PNG" alt="" /></span></div>
+									</div>
+								</div>
+
+								<h4>Power supply</h4>
+								<p style="text-align: justify">If your idea is to connect more than 40 LED lights to the Raspberry Pi, you will need an external power supply to make it work. For few LEDs, the output voltage and intensity that the Raspberry Pi gives it is sufficient, but for larger LED bands, an external source is needed. </p>
+								<p style="text-align: justify">You will just need a spare socket on your wall to connect the power supply, make some simple connections with it and that’s all, you will be able to use as many LEDs as you wish.</p>
+								<div class="box alt">
+									<div class="row aln-center">
+										<div class="col-4"><span class="image fit"><img src="images/powersupply.PNG" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/powersupply2.PNG" alt="" /></span></div>
+									</div>
+								</div>
+
+								<h3>Software</h3>
+								<p style="text-align: justify">The software part is not as complicated as it could look like at first sight. The basic idea is to use the Raspberry Pi as an intermediary between the gadget you will play the music in (smartphone, tablet, laptop…) and the speaker where the music will be played.</p>
+								<p style="text-align: justify"><span class="image left"><img src="images/spotify.png" alt=""/></span>We use <b>Raspotify</b> on the Raspberry Pi (The version of Spotify for Raspbian), and with that installed, we can connect our smartphone (or any other device) to it like when we connect it to a laptop or to a TV. We also connect the Raspberry Pi to a speaker via <b>Bluetooth</b> and the songs that you choose on your smartphone will be played there but going through the Raspberry Pi.</p>
+								<p style="text-align: justify"><span class="image right"><img src="images/flaskapp.png" alt="" /></span>But our product is not just that, we know that every person has different likes, and that is why we decided to make a <b>web server</b> to have the possibility to personalize the settings of the LED band (colors, intensity…) For creating the web server, we decided to use <b>Flask app</b>, as it is easy to understand to the final customer and easy to use and connect for almost any device with an internet connection.</p>
+								<p style="text-align: justify">Finally, as we are an open-source company, and everyone is able to make changes on the code we use, we decided to code in <b>Python</b> most of the time, because it is really simple and easy to understand for someone who has basic programming skills. But apart from Python, we used <b>HTML</b>, <b>JavaScript</b> and <b>CSS</b>, but those were used for the web server.</p>
+								<div class="box alt">
+									<div class="row aln-center">
+										<div class="col-2"><span class="image fit"><img src="images/python.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/htmlcssjs.png" alt="" /></span></div>
+										<!-- <div class="col-2"><span class="image fit"><img src="images/html.png" alt="" /></span></div>
+										<div class="col-2"><span class="image fit"><img src="images/javascript.png" alt="" /></span></div>
+										<div class="col-2"><span class="image fit"><img src="images/css.png" alt="" /></span></div> -->
+									</div>
+								</div>
+
+								<hr />
+
+								<h3>Modes</h3>
+								<p style="text-align: justify">Our product will have different modes to use, and depending on the mode that you choose to use, the LED lights will work in different ways.</p>
+								<p style="text-align: justify">Do you want to know what are the different modes and what does each of them do? So, let’s continue!</p>
+
+								<h4>Party mode</h4>
+								<p style="text-align: justify">This mode will control the lighting and music for <b>house parties</b>, such as <b>synchronizing the music with the light blinking.</b></p>
+								<a href="party_mode.html" class="button">Learn more</a>
+								<br><br><br>
+
+								<h4>Weather mode (in progress)</h4>
+								<p style="text-align: justify">In this mode LED lighting and music will be controlled <b>according to the weather</b> outside.</p>
+								<!-- <a href="weather_mode.html" class="button">Learn more</a> -->
+								<span class="button disabled">Learn more</span>
+
+								<hr />
+
+								<h3>Design</h3>
+								<p style="text-align: justify">We have asked to some of our future clients how would like the product to look like via some questionnaires, because we want to offer what the client wants.</p>
+								<p style="text-align: justify">We decided to make it in a modern style with metal and glass as the most prominent look. Regarding the shape, the device resembles a circle and the placement could be on a desk or even on the wall!</p>
+								<p style="text-align: justify">But that is not everything, as a company, we understand that different clients have different needs, and that is why we decided to create a design that is modular. In that way, it will cover the needs of all of our clients no matter what they are.</p>
+								<div class="box alt">
+									<div class="row aln-center">
+										<div class="col-4"><span class="image fit"><img src="images/render1.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/render2.png" alt="" /></span></div>
+										<div class="col-4"><span class="image fit"><img src="images/render3.png" alt="" /></span></div>
+									</div>
+								</div>
+								<a href="files/3D print.rar" download class="button primary">Download</a>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a target=”_blank” href="https://twitter.com/Highlig23210599" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target=”_blank” href="https://www.facebook.com/highlight.lodz" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a target=”_blank” href="https://www.instagram.com/highlight.team.company/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+							<!-- <li><a target=”_blank” href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
+						</ul>
+						<ul class="copyright">
+							<li>&copy; HighLight</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
